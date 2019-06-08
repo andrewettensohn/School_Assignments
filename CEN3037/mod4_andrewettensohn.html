@@ -1,0 +1,46 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+<title>Canvas</title>
+</head>
+ <body>
+<canvas id = "textCanvas" height = "100" width = "500">
+    Your browser does not support the HTML5 Canvas tag
+</canvas>
+<script>
+    var canObject = document.getElementById("textCanvas");
+    var crt = canObject.getContext("2d");
+    crt.fillStyle = "red";
+    crt.shadowOffsetX=2;
+    crt.shadowOffsetY=5;    
+    crt.shadowBlur=6;
+    crt.shadowColor="black";    
+    crt.font = "bold 48px Times New Roman";
+    crt.fillText("Messing With Canvas", 10, 40);  
+</script>
+<br>
+<canvas id = "diagonalLinearGradientCanvas" height = "500" width = "500">
+    Your browser does not support the HTML5 Canvas tag
+</canvas>
+<script>
+    var canObject2 = document.getElementById("diagonalLinearGradientCanvas");
+    var ctx = canObject2.getContext("2d");
+    var grd = ctx.createLinearGradient(50, 100, 200, 0);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(0.1, "orange");
+    grd.addColorStop(0.2, "yellow");
+    grd.addColorStop(0.3, "green");
+    grd.addColorStop(0.4, "blue");
+    grd.addColorStop(0.5, "indigo");
+    grd.addColorStop(0.6, "violet");
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 150, 80); 
+</script>
+<hr>
+<a href="index.html">Home Page </a>|
+<a href="mod1_andrewettensohn.html"> Weekly Salary by Ranges </a>|
+<a href="mod2_andrewettensohn.html"> Character Search </a>|
+<a href="mod3A_andrewettensohn.html"> Simple Drawing Program </a>|
+<a href="mod3B_andrewettensohn.html"> Drag and Drop Picture </a>|
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿a {
+    color: #FF0000;
+}
+.styleSheet {
+    background-color: #00FF00;
+    font-family: "HoloLens MDL2 Assets";
+    font-size: large;
+}
+.newStyle1 {
+    background-color: #3399FF;
+    font-family: Calibri;
+    font-size: medium;
+    color: #FFFFFF;
+}
+.newStyle2 {
+    background-color: #00FFFF;
+}
+.newStyle3 {
+    background-color: #FF0000;
+}
+.newStyle4 {
+    background-color: #3399FF;
+}
+.newStyle5 {
+    background-color: #0000FF;
+}
+.newStyle6 {
+    background-color: #3399FF;
+}
