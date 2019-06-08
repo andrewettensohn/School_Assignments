@@ -1,0 +1,12 @@
+/* This is An External Style Sheet */
+
+body {
+	font-family: arial,helvetica,sans-serif;  
+	color: #FFFFFF;
+	font-size: 18px; 
+	background-color:#414345;
+}
+a:link    { color: #ff0000 }  
+a:visited { color:#ff0000 }  
+a:hover   { color: white; }  
+a:active  { color: white; }  

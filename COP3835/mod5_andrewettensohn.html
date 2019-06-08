@@ -1,0 +1,82 @@
+<!DOCTYPE HTML> 
+<html> 
+
+<head> 
+<title>More JavaScript</title>
+<link type="text/css" rel="stylesheet" href="css/styles.css">
+<script language="javascript">
+document.write("<h1>More JavaScript</h1>");
+
+//Prompt user for input for the input variable
+var input = prompt("Enter 1 for odd, 2 For Even, and 3 for both: ");
+var choice
+
+//Use a switch selection statement, the number the user entered chooses which case they get
+switch (input)
+{
+
+case "1":
+  choice = "odd";
+  break;
+case "2":
+  choice = "even";
+  break;
+case "3":
+  choice = "both odd and even";
+  break;
+  default: choice = "Invalid Choice"
+}
+/* for loop that calculates the sum of odd, even, 
+or both odd and even numbers depending on what the user chose
+*/
+
+if (choice == "odd") 
+{
+var sum = 0;
+
+for (var number = 1; number <= 20; number += 2)
+	sum += number;
+	
+	document.write("<h2>"+"Your chose: " + choice + "</h2>");
+	document.write("<h2>" + "Result = " + sum + "</h2>");
+}
+else if (choice == "even") 
+{
+var sum = 0;
+
+for (var number = 2; number <= 20; number += 2)
+	sum += number;
+	
+	document.write("<h2>"+"Your chose: " + choice + "</h2>");
+	document.write("<h2>" + "Result = " + sum + "</h2>");
+}
+else if (choice == "both odd and even") 
+{
+var sum = 0;
+
+for (var number = 1; number <= 20; number += 1)
+	sum += number;
+	
+	document.write("<h2>"+"Your chose: " + choice + "</h2>");
+	document.write("<h2>" + "Result = " + sum + "</h2>");
+}
+else
+{
+ document.write("<h1>Invalid Choice</h1>")
+ }
+</script>
+</head> 
+
+
+<body>
+</body>
+
+<hr></hr>
+|<a href="index.html"> Home Page </a>|
+<a href="mod2_andrewettensohn.html"> Registration Page </a>|
+<a href="mod3_andrewettensohn.html"> Having Fun With Styles </a>|
+<a href="mod4_andrewettensohn.html"> JavaScript Page </a>|
+<a href="mod6_andrewettensohn.html"> Temperature Coneversion </a>|
+<a href="mod7_andrewettensohn.html"> Working With DOM </a>|
+<a href="mod7_andrewettensohnAlt.html"> Color Picker </a>|
+</html> 

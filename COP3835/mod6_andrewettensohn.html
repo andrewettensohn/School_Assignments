@@ -1,0 +1,82 @@
+<!DOCTYPE HTML> 
+<html> 
+
+<head> 
+<title>Temperature Conversion</title>
+<link type="text/css" rel="stylesheet" href="css/styles.css">
+<script language="javascript">
+
+function start()
+{
+
+var button1 = document.getElementById( "celsiusButton" );
+button1.addEventListener("click", convertToCelsius, false );
+
+var button2 = document.getElementById( "fahrenheitButton" );
+button2.addEventListener("click", convertToFahrenheit, false );
+
+}
+//end function start
+
+function convertToCelsius()
+{
+var inputField = document.getElementById("degreeField");
+var F = parseFloat( inputField.value );
+var result = document.getElementById("result");
+result.innerHTML = F + " fahrenheit converted to celsius is " + celsius(F);
+
+}
+//end function convertToCelsius
+
+function celsius(F)
+{
+return  5.0/9.0 * (F - 32);
+
+}
+// end function celsius
+
+function convertToFahrenheit()
+{
+var inputField = document.getElementById("degreeField");
+var C = parseFloat( inputField.value );
+var result = document.getElementById("result");
+result.innerHTML = C + " celsius converted to fahrenheit is " + fahrenheit(C);
+
+}
+//end function convertToFahrenheit
+
+function fahrenheit(C)
+
+{
+
+return 9.0/5.0 * C + 32;
+
+
+}
+// end function fahrenheit
+
+window.addEventListener( "load", start, false);
+</script>
+</head> 
+
+
+<body>
+<h1> Temperature Conversion </h1>
+<form action = "#">
+<p><label>Temperature to Convert: 
+	<input id = degreeField type="number"></label>
+	<input id = celsiusButton type="button" value="Celsius">
+	<input id = fahrenheitButton type="button" value="Fahrenheit"></p>
+</form>
+<p id ="result"></p>
+</body>
+
+<hr></hr>
+|<a href="index.html"> Home Page </a>|
+<a href="mod2_andrewettensohn.html"> Registration Page </a>|
+<a href="mod3_andrewettensohn.html"> Having Fun With Styles </a>|
+<a href="mod4_andrewettensohn.html"> JavaScript Page </a>|
+<a href="mod5_andrewettensohn.html"> More JavaScript </a>|
+<a href="mod7_andrewettensohn.html"> Working With DOM </a>|
+<a href="mod7_andrewettensohnAlt.html"> Color Picker </a>|
+</html> 

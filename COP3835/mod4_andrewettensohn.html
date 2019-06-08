@@ -1,0 +1,55 @@
+<!DOCTYPE HTML> 
+<html> 
+
+<head> 
+<title>JavaScript Page</title>
+<link type="text/css" rel="stylesheet" href="css/styles.css">
+<script language="javascript">
+document.write("<h1>Computer Man Inc.</h1>");
+
+//While loop so the user can only enter 3 employees
+var i = 0;
+while (i < 3)
+{
+//Prompt user for input
+var EmployeeName = prompt("Employee Name: ");
+var EmployeeHours = prompt("Employee Hours Worked: ");
+var EmployeeWage = prompt("Employee Hourly Wage: ");
+var EmployeePay = EmployeeWage * EmployeeHours;
+
+/*Calculate Over-time pay if over 40 hours 
+(I'm not really sure why 0.5 works but not 1.5. 
+I know it should be 1.5 but for some reason the program works. 
+Please let me know why after you grade this!)
+*/
+if (EmployeeHours > 40)
+{
+var OTPay = (EmployeeHours - 40) * (EmployeeWage * 0.5)
+EmployeePay = EmployeePay + OTPay
+
+}
+//Display results to user
+document.write("<h3>Name: " + EmployeeName + "</h3>");
+document.write("<h3>Pay per Hour: " + EmployeeWage + "</h3>");
+document.write("<h3>Total Hours Worked: " + EmployeeHours + "</h3>");
+document.write("<h3>Total Pay: " + EmployeePay + "</h3>" + "<br>");
+i++
+}
+
+
+</script>
+</head> 
+
+
+<body>
+</body>
+
+<hr></hr>
+|<a href="index.html"> Home Page </a>|
+<a href="mod2_andrewettensohn.html"> Registration Page </a>|
+<a href="mod3_andrewettensohn.html"> Having Fun With Styles </a>|
+<a href="mod5_andrewettensohn.html"> More JavaScript </a>|
+<a href="mod6_andrewettensohn.html"> Temperature Coneversion </a>|
+<a href="mod7_andrewettensohn.html"> Working With DOM </a>|
+<a href="mod7_andrewettensohnAlt.html"> Color Picker </a>|
+</html> 
